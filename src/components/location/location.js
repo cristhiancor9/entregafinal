@@ -26,12 +26,12 @@ class BgTracking extends Component {
 
     BackgroundGeolocation.on('location', (location) => {
       //handle your locations here
-      Actions.sendLocation(location);
+       console.log(location);
+       this.props.onChangeLocation(location);
     });
 
     BackgroundGeolocation.on('stationary', (stationaryLocation) => {
-      //handle stationary locations here
-      Actions.sendLocation(stationaryLocation);
+      console.log(stationaryLocation);
     });
 
     BackgroundGeolocation.on('error', (error) => {
