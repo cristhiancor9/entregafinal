@@ -19,22 +19,10 @@ export const stylemap = StyleSheet.create({
   map: {
     ...StyleSheet.absoluteFillObject,
   },
-bubblesearch: {
-    backgroundColor: 'rgba(0,128,0,0.7)',
-    paddingHorizontal: 5,
-    paddingVertical: 5,
-    borderRadius: 20,
-  },
-bubbleRed: {
-    backgroundColor: 'rgba(255,0,0,0.7)',
-    paddingHorizontal: 5,
-    paddingVertical: 5,
-    borderRadius: 20,
-  },
   bubble: {
     backgroundColor: 'rgba(14,205,255,0.7)',
-    paddingHorizontal: 5,
-    paddingVertical: 5,
+    paddingHorizontal: 18,
+    paddingVertical: 12,
     borderRadius: 20,
   },
   latlng: {
@@ -42,22 +30,14 @@ bubbleRed: {
     alignItems: 'stretch',
   },
   button: {
-    paddingHorizontal: 10,
+    width: 80,
+    paddingHorizontal: 12,
     alignItems: 'center',
     marginHorizontal: 10,
   },
-    sliderContainer: {
-    flexDirection: 'row',
-    marginVertical: 0,
-    textAlign: 'center',
-    backgroundColor: 'rgba(192,192,192,0.7)',
-    paddingHorizontal: 5,
-    paddingVertical: 5,
-    borderRadius: 20,
-  },
   buttonContainer: {
     flexDirection: 'row',
-    marginVertical: 10,
+    marginVertical: 20,
     backgroundColor: 'transparent',
   },
      customView: {
@@ -110,40 +90,5 @@ bubbleRed: {
     alignSelf: 'center',
     marginTop: -0.5,
   },
-  contenButon: {
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-    flex:1
-  },
-   buttonIcon: {
-    flexDirection: 'row',
-    alignItems: 'center'
-  },
-  textWhite:{
-    color: '#FFFFFF'
-  },
-   slider: {
-    flex:1,
-  },
-  textSlider: {
-    fontSize: 14,
-    textAlign: 'center',
-    fontWeight: '500',
-    margin: 10,
-  },
-   buttonStation: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-     marginVertical: 5,
-  },
-  bubbleblue: {
-    backgroundColor: 'rgba(0,0,255,0.7)',
-    paddingHorizontal: 5,
-    paddingVertical: 5,
-    borderRadius: 20,
-  },
-  iconhori:{
-  paddingHorizontal: 5,
-  },
+
 });

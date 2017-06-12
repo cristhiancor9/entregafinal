@@ -3,15 +3,17 @@ import {
   StyleSheet,
   View,
   Dimensions,
+  TouchableHighlight,
+  Text,
 } from 'react-native';
 
 
 
 import MapView from 'react-native-maps';
 import {stylemap} from './stylemap';
-import MarkerLocation from './MarkerLocation';
-import MarkerUbicacion from './MarkerUbicacion';
-import {DB_UBICACIONES} from './dbestaciones';
+import MarkerLocation from '../maps/MarkerLocation';
+//import MarkerUbicacion from './MarkerUbicacion';
+//import {DB_UBICACIONES} from './dbestaciones';
 
 
 
@@ -51,10 +53,6 @@ getKilometros (lat1,lon1,lat2,lon2)
 
 
 computeRegion() {
-
-console.log("HOMEMAPS LATITUDE:",this.props.latitude);
-console.log("HOMEMAPS longitude:",this.props.longitude);
-
     return {
     latitude: this.props.latitude,
     longitude: this.props.longitude,
@@ -75,23 +73,11 @@ return {
 
 }
 
+
   render() {
 
       return (
-      <View style={stylemap.container}>
-          <MapView
-          provider={this.props.provider}
-          style={stylemap.map}
-          region={this.computeRegion()}
-          initialRegion={this.computeRegion()}
-          >
-
-                <MarkerLocation locationactual={this.computeRegion()} />
-                  
-                 <MarkerUbicacion />
-
-          </MapView>
-      </View>
+     
       );
   }
 

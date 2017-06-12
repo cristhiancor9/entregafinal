@@ -19,3 +19,12 @@ export const MESSAGES = {
 	DOWNLOAD_DATA: 'Descargando datos, por favor espere...' 
 	
 }
+
+export const MENUPRIN = [
+
+ {name : 'Registrar',icon:"border-color",color:"#100719",ref:"registrarModal"},
+ {name : 'Estadistica',icon:"chart-areaspline",color:"#100719",ref:"estadisticasModal"}
+
+]
+	
+	

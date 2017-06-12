@@ -7,7 +7,7 @@ Visit: https://material.io/color
 export const COLOR = {
 	PRIMARY:'#8aac1a',
 	PRIMARY_LIGHT:'#bdde51',
-	PRIMARY_DARK:'#587d00',
+	PRIMARY_DARK:'#0080FF',
 	SECONDARY:'#fb8c00',
 	SECONDARY_LIGHT:'#ffbd45',
 	SECONDARY_DARK:'#c25e00',
